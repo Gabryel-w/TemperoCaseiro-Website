@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempero Caseiro</title>
+
+    <link rel="stylesheet" href="./src/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+
+
+
+<body>
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Tempero Caseiro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active " href="./index.html">Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./Cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="margem-top">
+
+
+        <section class="py-5 " id="Carrosel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./src/images/Imagens Carrosel/Carrosel-img1.jpg"
+                            class="d-block w-100 imagem-carrosel img-fluid" alt="Taça de Vinho">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./src/images/Imagens Carrosel/Carrosel-img2.jpg"
+                            class="d-block w-100 imagem-carrosel-2 img-fluid" alt="Vegetais e carnes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./src/images/Imagens Carrosel/Carrosel-img3.jpg"
+                            class="d-block w-100 imagem-carrosel-3 img-fluid" alt="Café">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="py-5" id="Listagem">
+
+            <h1 class="text-uppercase fs-1 text-center mb-5 fw-bold">Mais Vistos</h1>
+
+            <div class="container py-5">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card cor-borda">
+                            <img src="./src/images/Imagens Listagem/file.jpg" alt="filé">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Filé
+                                </h5>
+                                <p class="card-text">Filé Mignon ao Forno</p>
+                                <button class="modal-open" data-modal="modal1">Ler Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card cor-borda">
+                            <img src="./src/images/Imagens Listagem/picanha.jpg" alt="picanha">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Picanha
+                                </h5>
+                                <p class="card-text"> Picanha ao forno no sal grosso</p>
+                                <button class="modal-open" data-modal="modal2">Ler Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card cor-borda">
+                            <img src="./src/images/Imagens Listagem/cafe.jpg" alt="café">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Café com Especiarias
+                                </h5>
+                                <p class="card-text"> Café com diferentes ingredientes</p>
+                                <button class="modal-open" data-modal="modal3">Ler Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card cor-borda">
+                            <img src="./src/images/Imagens Listagem/espetinho.jpg" alt="espetinho">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Espetinho de Frango
+                                </h5>
+                                <p class="card-text"> Espetinho com mostarda</p>
+                                <button class="modal-open" data-modal="modal4">Ler Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <h1 class="text-uppercase fs-1 mt-5 mb-5 text-center fw-bold">Outras Receitas</h1>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card cor-borda">
+                                <img class="imagem" src="./src/images/Imagens Listagem/frango.jpg" alt="Frango Assado">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Frango Assado
+                                    </h5>
+                                    <p class="card-text"> Frango Assado </p>
+                                    <button class="modal-open" data-modal="modal5">Ler Mais</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card cor-borda">
+                                <img class="imagem" src="./src/images/Imagens Listagem/Salada.jpg" alt="Salada Caesar">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Salada Caesar
+                                    </h5>
+                                    <p class="card-text"> Salada Caesar</p>
+                                    <button class="modal-open" data-modal="modal6">Ler Mais</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card cor-borda">
+                                <img class="imagem" src="./src/images/Imagens Listagem/Salmao.jpg"
+                                    alt="Salmão com castanhas">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Salmão com Castanhas
+                                    </h5>
+                                    <p class="card-text">Salmão com castanhas</p>
+                                    <button class="modal-open" data-modal="modal7">Ler Mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card cor-borda">
+                                <img class="imagem" src="./src/images/Imagens Listagem/Tabule.jpg"
+                                    alt="Tabule de quinoa">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Tabule de Quinoa
+                                    </h5>
+                                    <p class="card-text">Tabule de quinoa</p>
+                                    <button class="modal-open" data-modal="modal8">Ler Mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card cor-borda">
+                                <img class="imagem" src="./src/images/Imagens Listagem/Bolo.jpg" alt="Bolo Simples">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Bolo Simples
+                                    </h5>
+                                    <p class="card-text">Bolo Simples</p>
+                                    <button class="modal-open" data-modal="modal9">Ler Mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card cor-borda">
+                                <img class="imagem" src="./src/images/Imagens Listagem/BoloChocolate.jpg"
+                                    alt="Bolo De Chocolate">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Bolo Chocolate
+                                    </h5>
+                                    <p class="card-text">Bolo Chocolate</p>
+                                    <button class="modal-open" data-modal="modal10">Ler Mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card cor-borda">
+                                <img class="imagem" src="./src/images/Imagens Listagem/Yakisoba.jpg" alt="Yakisoba">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Yakisoba
+                                    </h5>
+                                    <p class="card-text">Yakisoba Caseiro</p>
+                                    <button class="modal-open" data-modal="modal11">Ler Mais</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card cor-borda">
+                                <img class="imagem" src="./src/images/Imagens Listagem/Batata.jpg" alt="Batata">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Batata Rústica
+                                    </h5>
+                                    <p class="card-text">Batata rústica</p>
+                                    <button class="modal-open" data-modal="modal12">Ler Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+        <!----- Area Dos Modais!--->
+        <section title="Modais">
+            <div class="Modal" id="modal1">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Filé Mignon ao Forno</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p> Nada melhor para um almoço de domingo do que o bom e velho filé mignon. Esse é bem simples
+                            de
+                            ser feito, temperado apenas com mostarda, alho e sal e colocado no forno por 40 minutos.
+                            Fica
+                            uma delícia e é bem prático.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Modal" id="modal2">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Picanha Ao Forno Com Sal Grosso</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>A picanha é uma carne muito especial que precisa de cuidados ao ser preparada para ficar bem
+                            saborosa. Temperada apenas com sal grosso e manteiga. É de dar água na boca.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Modal" id="modal3">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Café Com Especiarias</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>Adicionar especiarias ao café deixa tudo ainda mais saboroso. Experimente canela ou gengibre,
+                            por
+                            exemplo, que além de darem sabor, trazem benefícios para a saúde, pois são termogênicos. O
+                            gengibre pode ser ralado e acrescentado ao pó antes de filtrar o café.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Modal" id="modal4">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Espetinhos de Frango com Mostarda Dukan</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>Quer sair da rotina com uma receita de frango? Você pode picar a carne em cubinhos e montar
+                            alguns espetinhos! Aqui, a mostarda entra em cena para dar um toque extra de sabor ao prato.
+                            É
+                            tudo muito simples, mas pode ser uma boa pedida para quem busca praticidade na cozinha.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Modal" id="modal5">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Frango Assado Com Ingredientes</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p> Frango assado é um prato muito comum nos almoços de domingo para muitos brasileiros, mas com
+                            alguns toques, você pode deixar esse prato diferente e especial. Aqui, o tomilho, a cebola e
+                            a
+                            laranja entram em cena para deixar sua carne mais gostosa e com uma aparência que pode
+                            deixar
+                            qualquer um com água na boca.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Modal" id="modal6">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Salada Caesar</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>Se você quer preparar um prato sem erro, recorrer para clássicos é uma ótima pedida! A salada
+                            Caesar é famosa ao redor do mundo todo e isso não acontece à toa, já que seu sabor é
+                            incrível. A receita é composta por alface, croutons, queijo parmesão ralado e um molho
+                            especial, feito com maionese, mostarda dijon, limão-siciliano, alho, azeite de oliva e
+                            queijo parmesão.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Modal" id="modal7">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Salmão com Castanhas</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p> O salmão por si só já é um peixe delicioso, mas você já pensou em usar castanhas trituradas
+                            para incrementar o seu sabor? Essa é a proposta desta receita, que fica pronta em apenas
+                            alguns minutinhos, mas pode deixar seu prato muito mais gostoso.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Modal" id="modal8">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Tabule de Quinoa</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>O tabule comum é feito com trigo, mas como essa é uma receita funcional, o ingrediente é
+                            substituído pela quinoa, que é um ingrediente rico em proteínas e ainda pode auxiliar na
+                            perda de peso. Como resultado, você terá um prato refrescante e que ao mesmo tempo conta com
+                            um gostinho incrível.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Modal" id="modal9">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Bolo Simples</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>A massa desse bolo pode ser feita na batedeira ou à mão, o que muda é o tempo: para a
+                            primeira opção, são 3 minutos; para a segunda 5 minutos. A vantagem desse bolo é que ele
+                            combina com diversas caldas e coberturas, caso você deseje preparar alguma.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Modal" id="modal10">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Bolo Chocolate</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>O bolo de chocolate é um dos queridinhos dos brasileiros, principalmente das crianças. Essa é
+                            uma receita em que a massa é feita no liquidificador, ou seja, rapidinha.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Modal" id="modal11">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Yakisoba</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>Preparar um yakisoba em casa é mais fácil do que você pensa. E o resultado é incrivelmente
+                            delicioso, afinal, as receitas caseiras são muito mais gostosas! Dê preferência a
+                            ingredientes frescos e naturais e capriche no molho – essas são as dicas principais.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Modal" id="modal12">
+                <div class="Modal-content">
+                    <div class="Modal-header">
+                        <p>Batata rústica</p>
+                    </div>
+                    <div class="Modal-body">
+                        <p>A batata frita tem praticamente unanimidade quando é colocada em comparação com outros
+                            acompanhamentos. Para sair um pouquinho da zona de conforto sem perder o sabor desse
+                            clássico, a dica é investir em uma boa e temperada batata rústica.</p>
+                    </div>
+                    <div class="Modal-footer">
+                        <button class="link Modal-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Tempero Caseiro</h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy;2022 Tempero Caseiro.</p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="./src/Scripts/Main.js"></script>
+    <script src="./src/Scripts/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>

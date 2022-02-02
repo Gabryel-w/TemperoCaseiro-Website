@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+ 
+}
+body {
+  background-image: url(/src/images/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
+}
+
+.caixa {
+  padding: 40px;
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 3px 1px 0px #00000060;
+}
+
+
+
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #080808;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #1a1a1a;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #59ca59;
+}
+
+.label-float label{
+  color: #0f0f0f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0
+}
+
+.botaoCadastro{
+  border-color: #19191a;
+  color: #cfd3e9;
+  background:rgb(108, 108, 238) ;
+  padding: 7px;
+  width: 200px;
+  height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #5648f0;
+  color: #fff;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+    margin-top: 2rem;
+}
+
+.formulario__legenda {
+    font-size: var(--fonte-tamanho-formulario-fieldset);
+    margin-bottom: 1rem;
+}
+
+.input-container {
+    font-weight: var(--fonte-peso-input);
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.input {
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--cor-secundaria);
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+}
+
+.input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+
+
+.input-label {
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: var(--fonte-tamanho-input-label);
+    transition: all .25s;
+}
+
+.input:not(:placeholder-shown) + .input-label, .input:focus + .input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all .25s;
+}
+
+.input-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalido .input {
+    border: 1px solid var(--cor-aviso);
+    border-radius: 7px;
+}
+
+.input-container--invalido .input-label {
+    color: var(--cor-aviso);
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: var(--cor-aviso);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.textarea {
+    box-sizing: border-box;
+    border: 1px solid var(--cor-secundaria);
+    padding: 0.5rem;    
+    border-radius: 7px;
+    width: 100%;
+    min-height: 3rem;
+}
+
+.textarea-container {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: var(--fonte-peso-input);
+}
+
+.textarea::placeholder {
+    visibility: hidden;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.textarea-label {
+   
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: var(--fonte-tamanho-input-label);
+    transition: all 0.25s;
+}
+
+.textarea:not(:placeholder-shown) + .textarea-label, .textarea:focus + .textarea-label {
+    font-size: 0.875rem;
+    top: -1.25rem;
+    transition: all 0.25s;
+}
+
+.textarea-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalido .textarea {
+    border: 1px solid var(--cor-aviso);
+}
+
+.textarea-container--invalido .textarea-label {
+    color: var(--cor-aviso);
+}
+
+.textarea-mensagem-erro {
+    display: none;
+}
+
+.textarea-container--invalido .textarea-mensagem-erro {
+    display: block;
+    color: var(--cor-aviso);
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+
+
+
+.data-nascimento{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
