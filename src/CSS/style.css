@@ -212,7 +212,7 @@ footer{
 
 
 .margem-top{
-    margin-top: 80px;
+    margin-top: 38px;
 }
 
 
@@ -255,4 +255,10 @@ footer{
 .imagem-concluido{
     width: 150px;
     height: 130px;
+}
+
+
+.alinhamento-titulo{
+    text-align: center;
+    align-items: center;
 }
