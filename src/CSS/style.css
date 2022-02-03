@@ -31,10 +31,9 @@
 
 .cor-borda{
     border-color: black;
-    
+    border-width: 4px;
     
 }
-
 
 .modal-open{
     padding: 8px 16px;
@@ -45,6 +44,9 @@
     border: none;
 }
 
+.modal-open:hover{
+    background: #110ece;
+}
 
 .Modal{
     position: fixed;
@@ -125,7 +127,8 @@
 
 .card{
     max-height: 400px;
-    
+    background: #333333;
+    color: white;
 }
 
 
@@ -209,5 +212,47 @@ footer{
 
 
 .margem-top{
-    margin-top: 60px;
+    margin-top: 80px;
+}
+
+
+.margem-concluido{
+    margin-top: 200px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.imagem-fundo{
+    background-image: url(/src/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.caixa {
+    padding: 40px;
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 3px 1px 0px #00000060;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px){
+    .caixa{
+        width: 100%;
+    }
+
+
+
+}
+
+.margem-footer{
+    margin-top: 150px;
+}
+
+.imagem-concluido{
+    width: 150px;
+    height: 130px;
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./src/CSS/style.css">
     <link rel="stylesheet" href="./src/CSS/cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <link rel="shortcut icon" href="./src/images/Icon.png" type="image/x-icon">
 </head>
 
 
@@ -37,7 +37,7 @@
                             <a class="nav-link active " href="./index.html">Receitas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Sobre Nós</a>
+                            <a class="nav-link active" href="./Sobre.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="./Cadastro.html">Cadastro</a>
@@ -55,53 +55,52 @@
             <div class='caixa'>
                 <h1> Cadastrar </h1>
 
-                <form action="./index.html">
-                   <fieldset>
+                <form action="./Concluido.html">
+                   
                         <div class="label-float">
                             <input name="nome" id="nome" class="input" type="text" required placeholder="Nome">
                             <label class="input-label" for="nome">Nome</label>
-                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                            
                         </div>
 
                         <div class="label-float">
                             <input name="email" id="email" class="input" type="email" required placeholder="Email">
                             <label class="input-label" for="email">Email</label>
-                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                           
                         </div>
 
                         <div class="label-float">
                             <input name="senha" id="senha" class="input" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter de 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um numero, e não deve conter simbolos." required placeholder="Senha">
                             <label class="input-label" for="senha">Senha</label>
-                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                          
                         </div>
 
-                    </fieldset>
+                    
 
-                    <fieldset>
+                   
                     <div class="label-float">
                         <p>Data Nascimento</p>
                         <input name="nascimento" id="nascimento" class="input" type="date" required
                             placeholder="Data de nascimento" data-tipo="dataNascimento">
                         <label class="input-label" for="nascimento"></label>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                        
                     </div>
 
 
                   
                         <div class="label-float">
-                            <input name="cpf" id="cpf" class="input" type="text" required placeholder="CPF">
+                            <input name="cpf" id="cpf" class="input" type="text" data-tipo="cpf" required placeholder="CPF">
                             <label class="input-label" for="cpf">CPF</label>
-                            <span class="input-mensagem-erro">Este campo não está válido</span>
                         </div>
 
 
                         <div class="label-float">
-                            <input name="cep" id="cep" class="input" type="text" required placeholder="CEP">
+                            <input name="cep" id="cep" class="input" pattern="[\d]{5}-?[\d]{3}" title="O CEP digitado Não é Valido" type="text" required placeholder="CEP">
                             <label class="input-label" for="cep">CEP</label>
-                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                            
                         </div>
 
-                    </fieldset>
+                
 
 
                     <div class='justify-center'>
