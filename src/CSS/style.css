@@ -249,14 +249,29 @@ footer{
     display: inline-block;
 }
 
+.caixa-sobre{
+    padding: 40px;
+    width: 700px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 3px 1px 0px #00000060;
+    display: inline-block;
+}
+
+
 @media only screen and (max-width: 600px){
     .caixa{
+        width: 100%;
+    }
+
+    .caixa-sobre{
         width: 100%;
     }
 
 
 
 }
+
 
 .margem-footer{
     margin-top: 150px;
