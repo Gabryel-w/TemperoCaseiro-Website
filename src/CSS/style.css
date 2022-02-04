@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+
 .imagem-carrosel{
     object-fit: cover;
     height: 400px;
@@ -30,8 +31,9 @@
   }
 
 .cor-borda{
-    border-color: black;
-    border-width: 4px;
+    border-color: rgb(64, 65, 62);
+    border-width: 3px;
+    box-shadow: 10px 3px 1px 0px #00000060;
     
 }
 
@@ -45,7 +47,8 @@
 }
 
 .modal-open:hover{
-    background: #110ece;
+    background: #4643f1;
+    transition: 0.4s;
 }
 
 .Modal{
@@ -98,7 +101,13 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    color: #1a73e8;
+    color: #fff;
+    background: #4643f1;
+}
+
+.Modal-close:hover{
+    background-color: #c43838;
+    transition: 0.4s;
 }
 
 @keyframes modal-open{
@@ -126,9 +135,10 @@
 
 
 .card{
+    height: 320px;
     max-height: 400px;
-    background: #333333;
-    color: white;
+    background: white;
+    color: black;
 }
 
 
@@ -212,7 +222,7 @@ footer{
 
 
 .margem-top{
-    margin-top: 38px;
+    margin-top: 60px;
 }
 
 
@@ -261,4 +271,98 @@ footer{
 .alinhamento-titulo{
     text-align: center;
     align-items: center;
+}
+
+body{
+    transition: background 0.2s linear;
+}
+
+body.dark {
+	background: #292C35;
+}
+
+body.dark p {
+    color: #fff;
+}
+
+body.dark h1 {
+    color: #fff;
+}
+
+body.dark h2{
+    color: #fff;
+}
+
+body.dark .caixa{
+    background: #292C35;
+    color: #fff;
+}
+
+body.dark .Modal-header p{
+    color: #fff;
+}
+
+body.dark .Modal-body p{
+    color: #fff;
+}
+
+body.dark .card{
+    background-color: #292C35;
+    color: #fff;
+}
+
+body.dark .Modal-content{
+    background-color: #333333;
+}
+
+
+
+
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+.margem{
+    padding: 20px;
 }

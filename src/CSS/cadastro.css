@@ -101,8 +101,8 @@ h1{
   transition: all .4s ease-out;
 }
 
-button:hover{
-  background-color: #5648f0;
+.botaoCadastro:hover{
+  background-color:#5648f0;
   color: #fff;
 }
 
